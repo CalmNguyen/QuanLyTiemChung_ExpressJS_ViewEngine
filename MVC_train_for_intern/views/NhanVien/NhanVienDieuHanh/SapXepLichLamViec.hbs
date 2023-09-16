@@ -1,0 +1,22 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" aria-describedby="basic-addon1" value="Mã Nhân Viên" readonly>
+    <input type="text" class="form-control" aria-describedby="basic-addon1" value="Ngày" readonly>
+    <input type="text" class="form-control" aria-describedby="basic-addon1" value="Ca" readonly>
+</div>
+{{#each postList}}
+<form action="./SapXepLich/accept/{{MaNV}}/{{Ngay}}/{{Ca}}" method="POST" class="NVDH_SapXepLichRanh">
+    <div class="input-group mb-3">
+        <input name="manv" type="text" class="form-control" placeholder="NV999999" aria-label="Username"
+            aria-describedby="basic-addon1" value="{{MaNV}}" readonly>
+        <input type="text" class="form-control" placeholder="NV999999" aria-label="Username"
+            aria-describedby="basic-addon1" value="{{Ngay}}" readonly>
+        <input type="text" class="form-control" placeholder="NV999999" aria-label="Username"
+            aria-describedby="basic-addon1" value="{{Ca}}" readonly>
+    </div>
+    <div class="NVDH_SapXepLichRanh2">
+
+        <button class="NVDH_SapXepLichRanh_left" type="cancel">Hủy</button>
+        <button class="NVDH_SapXepLichRanh_right" type="submit">Duyệt</button>
+    </div>
+</form>
+{{/each}}

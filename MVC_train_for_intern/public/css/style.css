@@ -1,0 +1,112 @@
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+
+
+.menu-tieptan {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #b1154a;
+    width: 80%;
+    background-color: #C0FFC0;
+}
+
+.menu-tieptan-1 {
+    width: 20%;
+    height: 20%;
+    margin: 50px;
+    display: inline;
+    position: static;
+}
+
+
+
+.menu-tieptan-1 button {
+    width: 15%;
+    height: 15%;
+    font: 1em sans-serif;
+    background-color: rgb(47, 212, 75);
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.menu-tieptan-1 button {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.menu-tieptan-1 button:hover {
+    background-color: rgb(237, 101, 38);
+    color: white;
+}
+
+.menu-tieptan-1 img {
+    height: 15%;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.header,
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: #0cde2b;
+    text-align: center;
+}
+
+.input-group {
+    width: 30%;
+}
+
+.NVDH_SapXepLichRanh {
+    width: 100%;
+    margin-right: 10px;
+    border: 1px solid none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f9fb;
+}
+
+.NVDH_SapXepLichRanh_left {
+    margin-left: 10%;
+    background-color: #b1154a;
+}
+
+.NVDH_SapXepLichRanh button {
+    width: 20%;
+    padding: 0.1%;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    margin: 5px;
+    width: 20%;
+    font-weight: 500;
+    border: 3px solid rgb(16, 14, 19);
+}
+
+.NVDH_SapXepLichRanh button:hover {
+    background-color: rgb(237, 101, 38);
+    color: white;
+}
+
+.NVDH_SapXepLichRanh_right {
+    background-color: rgb(31, 48, 199);
+    margin-left: 10px;
+}
+
+.NVDH_SapXepLichRanh2 {
+    margin-left: 50%;
+}
+
+.form-control {
+    margin: 5px;
+}
