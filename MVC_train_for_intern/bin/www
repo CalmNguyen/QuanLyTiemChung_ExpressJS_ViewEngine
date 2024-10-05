@@ -3,6 +3,7 @@
 require('dotenv').config();
 const http = require('http');
 const { sequelize } = require('../models');
+const port = normalizePort(process.env.PORT || '30001');
 
 sequelize.authenticate()
 	.then(() => {
@@ -13,8 +14,7 @@ sequelize.authenticate()
 		/**
 		 * Get port from environment and store in Express.
 		 */
-
-		const port = normalizePort(process.env.PORT || '3000');
+		console.log('in', port)
 		app.set('port', port);
 
 		/**

@@ -2,7 +2,13 @@ const bcrypt = require('bcrypt');
 const auth = require('../middlewares/auth')
 const NhanVien_SV = require('../services/NhanVien');
 exports.hello = (req, res) => {
-    res.render('index');
+    // res.render('index');
+    try {
+        res.status(200).json({ message: 'Success', data: {} });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal Server Error' });
+    }
 }
 exports.login = (req, res) => {
     console.log("login");
@@ -18,6 +24,7 @@ exports.CheckAccount = async (req, res, next) => {
     // }
     // else {
     // if (Password == pw) {
+    console.log(req.user.ViTri, 'in vị trí')
     const ViTri = req.user.ViTri
     if (ViTri == "Tiep tan")
         res.redirect("/nhanvientieptan");

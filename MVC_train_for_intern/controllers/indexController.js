@@ -1,4 +1,9 @@
 
 exports.index = (req, res) => {
-    res.render('index');
+    if (!req.user) {
+        res.render('index');
+    }
+    else {
+        res.redirect('/nhanvien')
+    }
 }
